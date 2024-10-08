@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from 'flowbite-react';
+import { Navbar,TextInput, Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import {AiOutlineSearch} from 'react-icons/ai';
 
@@ -10,7 +10,7 @@ export default function Header() {
        sm:text-xl font-semibold dark:text-white'>
         
        <span className='px-2 py-1 bg-gradient-to-r from-yellow-950
-       via-blue-300 to-green-300 rounded-lg text-white'>Bafro</span>
+       via-yellow-400 to-green-300 rounded-lg text-black'>Bafro</span>
        Blog
        </Link>
        <form>
@@ -18,7 +18,7 @@ export default function Header() {
         type='text'
         placeholder='Search...'
         rightIcon={AiOutlineSearch}
-        classsName='hidden lg:inline'
+        className='hidden lg:inline'
         />
        </form>
        <Button className='w-12 h-10 lg:hidden' color='gray' pill>
